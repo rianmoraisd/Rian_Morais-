@@ -16,3 +16,85 @@ servidores HTTP
 bancos de dados
 
 APIs
+
+4 O Node.js serve para criar aplicações do lado do servidor (back-end) usando JavaScript.
+Com ele, dá para:
+
+criar servidores web
+
+desenvolver APIs
+
+fazer aplicações em tempo real (chat, notificações)
+
+acessar banco de dados
+
+automatizar tarefas (scripts, bots, ferramentas)
+
+5. Qual comando é usado para executar um arquivo Node.js no terminal?
+O comando é:
+
+node nomeDoArquivo.js
+
+
+Exemplo:
+
+node app.js
+
+
+6. O que é o npm?
+O npm (Node Package Manager) é o gerenciador de pacotes do Node.js.
+Ele serve para:
+
+instalar bibliotecas prontas
+
+gerenciar dependências do projeto
+
+executar scripts
+
+Exemplo:
+
+npm install express
+
+
+7. O que significa a palavra módulo no Node.js?
+Um módulo é um arquivo ou conjunto de arquivos JavaScript que encapsula uma funcionalidade específica.
+Exemplos:
+
+módulos nativos: fs, http, path
+
+módulos criados por você
+
+módulos instalados via npm
+
+Eles ajudam a organizar o código e reaproveitar funcionalidades.
+
+8. O Node.js é mais usado no front-end ou no back-end?
+O Node.js é mais usado no back-end.
+No front-end, o JavaScript roda no navegador.
+O Node.js fica responsável por:
+
+servidor
+
+regras de negócio
+
+comunicação com banco de dados
+
+9. O que é o arquivo package.json?
+O package.json é o arquivo de configuração do projeto Node.js.
+Ele guarda informações como:
+
+nome e versão do projeto
+
+dependências
+
+scripts (ex: npm start)
+
+autor e descrição
+
+É essencial em praticamente todo projeto Node.js.
+
+10. O Node.js é gratuito ou pago?
+O Node.js é totalmente gratuito e open source ✅
+Qualquer pessoa pode usar, modificar e distribuir sem pagar nada.
+
+Se quiser, posso transformar tudo isso em um resumo de prova ou mapa mental pra facilitar a memorização 📚✨
