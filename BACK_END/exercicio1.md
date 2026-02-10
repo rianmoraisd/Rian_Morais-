@@ -95,6 +95,4 @@ autor e descrição
 
 10. O Node.js é gratuito ou pago?
 O Node.js é totalmente gratuito e open source ✅
-Qualquer pessoa pode usar, modificar e distribuir sem pagar nada.
-
-Se quiser, posso transformar tudo isso em um resumo de prova ou mapa mental pra facilitar a memorização 📚✨
+Qualquer pessoa pode usar, modificar e distribuir sem pagar nada
