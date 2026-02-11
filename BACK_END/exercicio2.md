@@ -109,3 +109,22 @@ Atualizar dependências
 Gerenciar versões
 
 Executar scripts do projeto
+
+9. API REST e Node.js
+
+Uma API REST é um modelo de comunicação entre sistemas via HTTP, usando métodos como GET, POST, PUT e DELETE para manipular dados, geralmente em formato JSON.
+
+
+10. Vantagens e desvantagens do Node.js
+
+Vantagens:
+
+Alto desempenho em aplicações com muitas requisições (modelo assíncrono).
+
+Uso de JavaScript no front-end e back-end.
+
+Desvantagens:
+
+Não é ideal para tarefas pesadas de processamento (CPU).
+
+Pode ser mais difícil de organizar devido à programação assíncrona.
