@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AtendeAI | Jogo da Memória</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jogo.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>✦</span> AtendeAI
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="como-funciona.html">Como funciona</a>
+        <a href="planos.html">Planos</a>
+        <a href="demonstracao.html">Demonstração</a>
+        <a href="jogo.html" class="active">Jogo</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+        <a href="login.html" class="nav-login">
+            Entrar
+        </a>
+
+        <a href="cadastro.html" class="nav-button">
+            Começar agora
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <small>DESAFIO RÁPIDO</small>
+
+    <h1>Jogo da <span>memória</span></h1>
+
+    <p>
+        Encontre todos os pares no menor número de jogadas.
+        Cada par vale 100 pontos e cada erro custa 10.
+    </p>
+
+</section>
+
+
+<section class="game">
+
+    <div class="game-toolbar">
+
+        <div class="levels" id="levels">
+
+            <button class="level-button active" data-level="facil" type="button">
+                Fácil
+            </button>
+
+            <button class="level-button" data-level="medio" type="button">
+                Médio
+            </button>
+
+            <button class="level-button" data-level="dificil" type="button">
+                Difícil
+            </button>
+
+        </div>
+
+        <button class="button primary new-game" id="newGame" type="button">
+            Novo jogo
+        </button>
+
+    </div>
+
+
+    <div class="game-stats">
+
+        <div>
+            <span>Pares</span>
+            <strong id="statPairs">0/6</strong>
+        </div>
+
+        <div>
+            <span>Jogadas</span>
+            <strong id="statMoves">0</strong>
+        </div>
+
+        <div>
+            <span>Pontos</span>
+            <strong id="statPoints">0</strong>
+        </div>
+
+        <div>
+            <span>Recorde</span>
+            <strong id="statRecord">—</strong>
+        </div>
+
+    </div>
+
+
+    <p class="game-status" id="gameStatus" role="status">
+        Escolha um nível e comece a jogar.
+    </p>
+
+
+    <div class="board" id="board"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="logo">
+        <span>✦</span> AtendeAI
+    </div>
+
+    <p>
+        Atendimento inteligente para pequenos negócios.
+    </p>
+
+    <span>
+        © 2026 AtendeAI
+    </span>
+
+</footer>
+
+
+<script src="jogo.js"></script>
+
+</body>
+</html>

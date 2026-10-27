@@ -1,0 +1,213 @@
+/* Jogo da memória — estilos específicos da página jogo.html */
+
+.game {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 10px 20px 100px;
+}
+
+.game-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.levels {
+    display: flex;
+    gap: 6px;
+
+    padding: 6px;
+
+    background: #101624;
+
+    border: 1px solid #252c3d;
+    border-radius: 12px;
+}
+
+.level-button {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #9ba2b3;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition: .2s;
+}
+
+.level-button:hover {
+    color: #fff;
+}
+
+.level-button.active {
+    background: #6c63ff;
+    color: #fff;
+}
+
+.new-game {
+    padding: 13px 20px;
+}
+
+.game-stats {
+    margin-top: 22px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.game-stats div {
+    padding: 16px;
+
+    background: #101624;
+
+    border: 1px solid #252c3d;
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.game-stats span {
+    display: block;
+
+    color: #858d9f;
+
+    font-size: 13px;
+}
+
+.game-stats strong {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 24px;
+}
+
+.game-status {
+    margin: 22px 0;
+
+    min-height: 24px;
+
+    color: #9299aa;
+}
+
+.game-status.win {
+    color: #55c78a;
+    font-weight: 700;
+}
+
+.board {
+    max-width: 660px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 4), 1fr);
+    gap: 12px;
+}
+
+.card {
+    display: block;
+    width: 100%;
+
+    aspect-ratio: 1;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    perspective: 800px;
+}
+
+.card-inner {
+    position: absolute;
+
+    inset: 0;
+
+    transform-style: preserve-3d;
+
+    transition: transform .35s;
+}
+
+.card {
+    position: relative;
+}
+
+.card.flipped .card-inner,
+.card.matched .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    backface-visibility: hidden;
+
+    font-size: clamp(22px, 6vw, 40px);
+}
+
+.card-front {
+    background: #101624;
+
+    border: 1px solid #252c3d;
+
+    color: #6c63ff;
+
+    font-weight: 800;
+}
+
+.card-back {
+    background: #171e2d;
+
+    border: 1px solid #3b2f9c;
+
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    cursor: default;
+}
+
+.card.matched .card-back {
+    background: #12251d;
+
+    border-color: #55c78a;
+}
+
+.card:focus-visible {
+    outline: 2px solid #6c63ff;
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+
+    .game-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .board {
+        gap: 8px;
+    }
+}
